@@ -1,0 +1,66 @@
+/* Reset nhẹ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* 3. Skip link */
+a.skip {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 8px;
+}
+
+a.skip:focus {
+    top: 10px;
+}
+
+/* 4. NAV đẹp */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 8. Hover */
+nav a:hover {
+    color: yellow;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* 5. IMAGE box model */
+img {
+    border: 3px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* 6. GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* 7. FLEX */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 9. nth-child */
+.flex img:nth-child(even) {
+    border-radius: 50%;
+}
